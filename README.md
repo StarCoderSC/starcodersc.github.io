@@ -7,9 +7,18 @@ This is my personal developer website built using just HTML and CSS. It showcase
 
 ## 🧠 Projects Featured
 
-- [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todo-manager.)
-- [File Organizer CLI](https://github.com/StarCodderSC/file-organizer-cli)
+- [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todo-manager)
+  -> A lightweight command-line task manager with persistent storage.
 
+- [File Organizer CLI](https://github.com/StarCodderSC/file-organizer-cli)
+  -> Organizes files by type, logs actions, supports undo via log.
+
+- [Flatten utils](https://github.com/StarCoderSC/flatten-utils)
+  -> A lightweight utility to deeply flatten nested Python structure like 'lists', 'tuples', 'sets','dicts' and more -- without breaking a sweat.
+
+- [StarCoder Bog App](https://github.com/StarCoderSC/flask-contact-app)
+  -> A blog + contact form web app using modular Flask architecture. Works in process - will resume soon...
+  
 ## Build with 
 
 - HTML%
