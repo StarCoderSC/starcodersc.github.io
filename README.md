@@ -7,6 +7,9 @@ This is my personal developer website built using just HTML and CSS. It showcase
 
 ## 🧠 Projects Featured
 
+- [Math Expression Evaluator](https://github.com/StarCoderSC/math-expression-evaluator)
+  -> A scientific calculator that supports variables, user-defined functions, and full infix evaluation without using Python's 'eval()' - all CLI-powered.
+
 - [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todo-manager)
   -> A lightweight command-line task manager with persistent storage.
 
@@ -21,9 +24,9 @@ This is my personal developer website built using just HTML and CSS. It showcase
   
 ## Build with 
 
-- HTML%
+- HTML5
 - CSS3
-- Github pages (Free Hosting)
+- Github Pages (Free Hosting)
 
 # Who Am I?
 
@@ -33,5 +36,5 @@ get things done - because passion > hardware 💪
 ## 🚀 Future Goals
 
 - Build a blog platorm (Flask + SQLite)
-- Mater backend APIs
+- Master backend APIs
 - Explore AI & autmation
