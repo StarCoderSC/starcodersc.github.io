@@ -1,30 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background: #adb6e4;
-    color: #333;
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-header, section, footer {
-    background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #1e3a8a;
+    color: white;
 }
 
-h1, h2 {
-    color: #1a237e;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background: #374151;
+    padding: 1rem;
 }
 
-a {
-    color: #0d47a1;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1)
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #f1f5f9;
+    border-left: 5px solid #1e40af;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #1e40af;
+    font-weight: bold;
     text-decoration: none;
 }
 
-a:hover {
+.project-card a:hover {
     text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 4rem
 }
 
