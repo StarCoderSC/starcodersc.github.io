@@ -1,37 +1,32 @@
-# 👋 Hey there, I'm StarCoder's
+# 🌐 StarCoder's Portfolio
+
+This is my personal developer website built using just HTML and CSS.
+It showcases my current Python projects and tools as I learn and grow in the programming world.
+
+🔗 Live site: [https://starcodersc.github.io](https://starcodersc.github.io)
+
+## 🧠 Projects Featured
+
+- [Duplicates File Cleaner](https://github.com/StarCoderSC/duplicate-file-cleaner)
+  -> A terminal-based Python CLI tool that scans folders for **duplicate files based on content**, and lets you **preview or safely delete them**.
+
+- [Math Expression Evaluator](https://github.com/StarCoderSC/math-expression-evaluator)
+  -> A scientific calculator that supports variables, user-defined functions, and full infix evaluation without using Python's 'eval()' - all CLI-Powered
 
 
-I'm a self-taught developer learning Python, CLI tools, automation, and web development from scratch. I work on a low-RAM machine and still 
-get things done - because passion > hardware 💪
+- [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todomanager)
+  -> A lightweight command-line task manager with persistent storage
 
-This is my personal developer website built using just HTML and CSS. It showcase my current Python projects and tools as i learn and grow in the programming world.
+- [File Organizer CLI](https://github.com/StarCoderSC/file-organizer-cli)
+  -> Organizes file by type, logs actions, supports undo via log.
 
-🌐 Portfolio -> [starcodersc.github.io](https://starcodersc.github.io)
+- [Flatten utils](https://github.com/StarCoderSC/flatten-utils)
+  -> A lightweight utility to deeply flatten nested Python structure like 'lists', 'tuples', 'sets','dicts' and more -- without breaking a sweat
 
-📂 My Projects -> See below 👇
-
----
-
-## Projects
-
-|Project | Description | Link |
-|--------|-------------|------|
-| Duplicate File Cleaner | Detects duplicates files via SHA256 (preview and safe delete) | [GitHub ->](https://github.com/StarCoderSC/duplicate-file-cleaner)
-
-
-| Math Expression Evaluator | Scientific calculator with custom parser | [GitHub ->](https://github.com/StarCoderSC/math-expression-evaluator)
-
-
-| CLI To-Do Manager | Task tracker in Terminal | [GitHub ->](https://github.com/StarCoderSC/cli-todo-manager)
-
-| File Organizer CLI | Organizes messy folders by file type | [GitHub ->](https://github.com/StarCodderSC/file-organizer-cli)
-
-
-| Flatten utils | Python module to flatten nested data | [GitHub ->](https://github.com/StarCoderSC/flatten-utils)
-
-| Flask Contact App | Modular Flask contact/blog app (WIP) | [GitHub ->](https://github.com/StarCoderSC/flask-contact-app)
-
----
+- [Flask Contact App](https://github.com/StarCoderSC/flask-contact-app)
+  -> A fully functionalblog web application buillt with Flask and SQL Alchemy.
+  Includes admin controls, contact form.
+  API support, comment section, and Google login integration.
 
 ## Build with 
 
@@ -39,13 +34,13 @@ This is my personal developer website built using just HTML and CSS. It showcase
 - CSS3
 - Github Pages (Free Hosting)
 
+## Who Am I?
+
+I'm a self-taught developer learning Python, CLI tools, automation, and web development from scratch.
+I work on a low-RAM machine and still get things done - because passion > hardware
+
 ## 🚀 Future Goals
 
 - Learn full-stack backend (Flask -> APIs -> DBs)
 - Build a blog platorm (Flask + SQLite)
 - Dive deep into AI & autmation
-- Help others...
-
----
-
-> ⚙️  "I don't have antything i need. But I'm still building everything i can."
