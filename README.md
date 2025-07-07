@@ -16,6 +16,9 @@ This is my personal developer website built using just HTML and CSS. It showcase
 
 |Project | Description | Link |
 |--------|-------------|------|
+| Duplicate File Cleaner | Detects duplicates files via SHA256 (preview and safe delete) | [GitHub ->](https://github.com/StarCoderSC/duplicate-file-cleaner)
+
+
 | Math Expression Evaluator | Scientific calculator with custom parser | [GitHub ->](https://github.com/StarCoderSC/math-expression-evaluator)
 
 
@@ -45,4 +48,4 @@ This is my personal developer website built using just HTML and CSS. It showcase
 
 ---
 
-> ⚙️ "I don't have antything i need. But I'm still building everything i can."
+> ⚙️  "I don't have antything i need. But I'm still building everything i can."
