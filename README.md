@@ -13,8 +13,7 @@ It showcases my current Python projects and tools as I learn and grow in the pro
 - [Math Expression Evaluator](https://github.com/StarCoderSC/math-expression-evaluator)
   -> A scientific calculator that supports variables, user-defined functions, and full infix evaluation without using Python's 'eval()' - all CLI-Powered
 
-
-- [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todomanager)
+- [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todo-manager)
   -> A lightweight command-line task manager with persistent storage
 
 - [File Organizer CLI](https://github.com/StarCoderSC/file-organizer-cli)
