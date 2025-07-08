@@ -52,6 +52,14 @@ section {
     border-left: 5px solid #1e40af;
     padding: 1rem;
     border-radius: 8px;
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    text-decoration: underline;
 }
 
 .project-card h3 {
@@ -66,8 +74,13 @@ section {
     text-decoration: none;
 }
 
-.project-card a:hover {
-    text-decoration: underline;
+#back-to-top {
+    position: fixed; bottom: 30px; right: 30px;
+    background: #007acc; color: #fff;
+    border: none; padding: 0.7rem;
+    border-radius: 50%;
+    cursor: pointer; display: none;
+    font-size: 1.2rem;
 }
 
 footer {
@@ -77,4 +90,17 @@ footer {
     color: white;
     margin-top: 4rem
 }
+
+#hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #007acc;
+    color: #fff;
+    border-radius: 12px;
+    margin: 2rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wghts@300;400;500&display=swap');
+
+body {font-family: 'Poppins', sans-serif;}
+
 
