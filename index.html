@@ -33,7 +33,7 @@
   </header>
 
   <section id="hero">
-    <h2>👋 Hi, I'm Starcoder. Python developer building real-world tools & automation - all on MyStupidLaptop😄.</h2>
+    <h2>👋 Hi, I'm Starcoder.</h2>
     <p><span id="typewriter-text"></span><span class="cursor">|</span></p>
   </section>
 
@@ -126,6 +126,18 @@
     document.getElementById('particles-js').innerHTML = '';
     initParticles(newTheme);
     };
+
+    window.addEventListener('scroll', () => {
+      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
 
     window.addEventListener('scroll', () => {
       navLinks.forEach(link => {
