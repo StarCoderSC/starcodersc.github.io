@@ -137,3 +137,16 @@ body.dark.project-card a {
 body.dark #back-to-top {
     background: 338bdf8;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav a.active {
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 3px;
+}
