@@ -98,6 +98,26 @@ footer {
     border-radius: 12px;
     margin: 2rem;
 }
+
+#hero {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    display: none;
+}
+
+#hero.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#hero.hide {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 body {font-family: 'Poppins', sans-serif;}

@@ -125,6 +125,20 @@
       btn.style.display = window.scrollY > 300 ? 'block': 'none';
     });
     btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hero = document.getElementById('hero');
+      hero.classList.add('show');
+
+      setTimeout(() => {
+        hero.classList.add('hide');
+
+        setTimeout(() => {
+          hero.style.display = 'none';
+        }, 600); //matches hide animation
+      }, 2500);
+    });
+    
   </script>
 
 </body>
