@@ -15,7 +15,7 @@
 
 </head>
 <body>
-  <div id="particle-js"></div>
+  <div id="particles-js"></div>
 
   <header>
     <div class="nav-container">
@@ -116,8 +116,10 @@
     const navLinks = document.querySelectorAll('nav a');
     window.addEventListener('scroll', () => {
       navLinks.forEach(link => {
+        const sec = document.querySelector(link.getAttribute('href'));
+
         const secTop = sec.getBoundingClientRect().top;
-        if (sec.top <= 100 && sec.top >= 100) {
+        if (secTop <= 100 && secTop >= 100) {
           link.classList.add('active');
         } else link.classList.remove('active');
       });
@@ -137,9 +139,9 @@
         hero.classList.add('hide');
 
         setTimeout(() => {
-          hero.style.display = 'none';
+          hero.style.visibility = 'hidden';
         }, 600); //matches hide animation
-      }, 2500);
+      }, 3500);
     });
     
     const observer = new IntersectionObserver((entries) => {
@@ -158,12 +160,12 @@
 
     particlesJS("particles-js", {
       "particles": {
-        "number": { "value": 60 },
-        "color": { "value": "#ffffff" },
+        "number": { "value": 80 },
+        "color": { "value": "#38bdf8" },
         "shape": { "type": "circle" },
-        "opacity": { "value": 0.3 },
-        "size": { "value": 2 },
-        "move": { "enable": true, "speed": 0.6 }
+        "opacity": { "value": 0.4 },
+        "size": { "value": 3 },
+        "move": { "enable": true, "speed": 1.0 }
       },
       "interactivity": {
         "events": {

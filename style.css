@@ -52,9 +52,7 @@ section {
     padding: 1rem;
     border-radius: 8px;
     transform: translateY(0);
-    transition: transform 0.6s ease;
-    opacity: 0;
-
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .project-card.visible {
@@ -66,6 +64,7 @@ section {
     transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .project-card h3 {
@@ -98,20 +97,13 @@ footer {
 }
 
 #hero {
-    text-align: center;
-    padding: 4rem 1rem;
-    background: #007acc;
-    color: #fff;
-    border-radius: 12px;
-    margin: 2rem;
-}
-
-#hero {
     opacity: 0;
     transform: translateY(-30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     display: none;
 }
+
+
 
 #hero.show {
     display: block;
@@ -120,9 +112,10 @@ footer {
 }
 
 #hero.hide {
+    visibility: hidden;
     opacity: 0;
     transform: translateY(-20px);
-    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in, visibility 0s 0.5s;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
