@@ -33,8 +33,8 @@
   </header>
 
   <section id="hero">
-    <h2>👋 Hi, I'm Starcoder</h2>
-    <p>Python developer building real-world tools & automation - all on MyStupidLaptop😄.</p>
+    <h2>👋 Hi, I'm Starcoder. Python developer building real-world tools & automation - all on MyStupidLaptop😄.</h2>
+    <p><span id="typewriter-text"></span><span class="cursor">|</span></p>
   </section>
 
   <section id="about">
@@ -134,7 +134,7 @@
         if (secTop >= 0 && secTop <= 150) {
           link.classList.add('active');
         } else {
-          lin.classList.remove('active');
+          link.classList.remove('active');
         }
       });
 
@@ -142,7 +142,7 @@
     });
 
     btn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behaviour: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     function initParticles(theme) {
@@ -179,7 +179,41 @@
       document.querySelectorAll('project-card').forEach(card => {
         observer.observe(card);
       });
+
+      typeWriter([
+        "Pythn developer building real-world tools & automation...",
+        "All on MyStupidLaptop 😄",
+        "And a CLI maniac 🚀"
+      ], "typewriter-text");
     });
+
+    function typeWriter(textArray, elementId, delay = 70, pause = 1200) {
+      const element = document.getElementById(elementId);
+      let textIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (textIndex >= textArray.length) {
+          element.textContent = textArray[textArray.length - 1];
+          return;
+        }
+
+        const currentText = textArray[textIndex];
+        if (charIndex < currentText.length) {
+          element.textContent += currentText[charIndex++];
+          setTimeout(type, delay);
+        } else {
+          setTimeout(() => {
+            element.textContent = '';
+            charIndex = 0;
+            textIndex++;
+            type();
+          }, pause);
+        }
+      }
+
+      type()
+    }
   </script>
 
 </body>
