@@ -98,7 +98,7 @@
   <section id="resume">
     <h2>📜 Resume</h2>
     <p>Download my resume:
-      <a href="javascript:window.print()">🖨️ View My Resume and download directly from browser (Working on it)</a>
+      <a href="#" onclick="window.print(); return false;">🖨️ View My Resume and download directly from browser</a>
     </p>
   </section>
   <footer>
@@ -188,12 +188,12 @@
       const isDark = document.body.classList.contains('dark');
       initParticles(isDark ? "dark" : "light");
 
-      document.querySelectorAll('project-card').forEach(card => {
+      document.querySelectorAll('.project-card').forEach(card => {
         observer.observe(card);
       });
 
       typeWriter([
-        "Pythn developer building real-world tools & automation...",
+        "Python developer building real-world tools & automation...",
         "All on MyStupidLaptop 😄",
         "And a CLI maniac 🚀"
       ], "typewriter-text");
