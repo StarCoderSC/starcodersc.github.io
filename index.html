@@ -11,8 +11,11 @@
   <title>StarCoder | Python Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png"/>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
 </head>
 <body>
+  <div id="particle-js"></div>
 
   <header>
     <div class="nav-container">
@@ -139,6 +142,36 @@
       }, 2500);
     });
     
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      observer.observe(card);
+    });
+
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 60 },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.3 },
+        "size": { "value": 2 },
+        "move": { "enable": true, "speed": 0.6 }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" }
+        }
+      }
+    });
+
   </script>
 
 </body>
