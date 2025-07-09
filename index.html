@@ -110,7 +110,11 @@
     const toggle = document.getElementById('theme-toggle');
     toggle.onclick = () => {
       document.body.classList.toggle('dark');
-      toggle.textContent = document.body.classList.contains('dark') ? '🌞' : '🌙';
+      const newTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
+      toggle.textContent = newTheme === 'dark' ? '🌞' : '🌙';
+
+      document.getElementById('particles-js').innerHTML= '';
+      initparticles(newTheme);
     };
 
     const navLinks = document.querySelectorAll('nav a');
@@ -158,20 +162,27 @@
       observer.observe(card);
     });
 
-    particlesJS("particles-js", {
-      "particles": {
-        "number": { "value": 80 },
-        "color": { "value": "#38bdf8" },
-        "shape": { "type": "circle" },
-        "opacity": { "value": 0.4 },
-        "size": { "value": 3 },
-        "move": { "enable": true, "speed": 1.0 }
-      },
-      "interactivity": {
-        "events": {
-          "onhover": { "enable": true, "mode": "repulse" }
-        }
-      }
+    function initParticles(theme) {
+      particlesJS("particles-js", {
+        "particles": {
+          "number": { "value": 80 },
+          "color": { value: theme == "dark" ? "#ffffff": "#1e3a8a" },
+          "shape": { "type": "circle" },
+          "opacity": { "value": 0.4 },
+          "size": { "value": 3 },
+          "move": { "enable": true, "speed": 1.0 }
+        },
+        "interactivity": {
+          "events": {
+            "onhover": { "enable": true, "mode": "repulse" }
+          }
+        } 
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const isDark = document.body.classList.contains('dark');
+      initParticles(isDark ? "dark" : "light");
     });
 
   </script>
