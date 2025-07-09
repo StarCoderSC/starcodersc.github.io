@@ -108,32 +108,60 @@
 
   <script>
     const toggle = document.getElementById('theme-toggle');
+    const btn = document.getElementById('back-to-top');
+    const navLinks = document.querySelectorAll('nav a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
     toggle.onclick = () => {
       document.body.classList.toggle('dark');
       const newTheme = document.body.classList.contains('dark') ? 'dark' : 'light';
       toggle.textContent = newTheme === 'dark' ? '🌞' : '🌙';
-
-      document.getElementById('particles-js').innerHTML= '';
-      initparticles(newTheme);
+    
+    document.getElementById('particles-js').innerHTML = '';
+    initParticles(newTheme);
     };
 
-    const navLinks = document.querySelectorAll('nav a');
     window.addEventListener('scroll', () => {
       navLinks.forEach(link => {
         const sec = document.querySelector(link.getAttribute('href'));
-
         const secTop = sec.getBoundingClientRect().top;
-        if (secTop >= 0 && secTop >= 100) {
+        if (secTop >= 0 && secTop <= 150) {
           link.classList.add('active');
-        } else link.classList.remove('active');
+        } else {
+          lin.classList.remove('active');
+        }
       });
+
+      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
     });
 
-    const btn = document.getElementById('back-to-top');
-    window.addEventListener('scroll', () => {
-      btn.style.display = window.scrollY > 300 ? 'block': 'none';
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behaviour: 'smooth' });
     });
-    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    function initParticles(theme) {
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80 },
+          color: { value: theme === "dark" ? "#ffffff" : "#1e3a8a" },
+          shape: { type: "circle" },
+          opacity: { value: 0.4 },
+          size: { value: 3 },
+          move: { enable: true, speed: 1.0 }
+        },
+        interactivity: {
+          events: {
+            onhover: {enable: true, mode: "repulse" }
+          }
+        }
+      });
+    }
 
     window.addEventListener('DOMContentLoaded', () => {
       const hero = document.getElementById('hero');
@@ -142,55 +170,16 @@
         hero.classList.add('hide');
         setTimeout(() => {
           hero.style.visibility = 'hidden';
-        }, 600); //matches hide animation
+        }, 600);
       }, 3500);
-  
 
-    const isDark = document.body.classList.contains('dark');
-    initParticles(isDark ? "dark" : "light");
-
-    document.queryselectorAll('.project-card').forEach(card => {
-      observer.observe(card);
-      });
-    });
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    document.querySelectorAll('.project-card').forEach(card => {
-      observer.observe(card);
-    });
-
-    function initParticles(theme) {
-      particlesJS("particles-js", {
-        "particles": {
-          "number": { "value": 80 },
-          "color": { value: theme == "dark" ? "#ffffff": "#1e3a8a" },
-          "shape": { "type": "circle" },
-          "opacity": { "value": 0.4 },
-          "size": { "value": 3 },
-          "move": { "enable": true, "speed": 1.0 }
-        },
-        "interactivity": {
-          "events": {
-            "onhover": { "enable": true, "mode": "repulse" }
-          }
-        } 
-      });
-    }
-
-    window.addEventListener('DOMContentLoaded', () => {
       const isDark = document.body.classList.contains('dark');
       initParticles(isDark ? "dark" : "light");
-    });
 
+      document.querySelectorAll('project-card').forEach(card => {
+        observer.observe(card);
+      });
+    });
   </script>
 
 </body>
