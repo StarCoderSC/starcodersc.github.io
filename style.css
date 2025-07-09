@@ -1,5 +1,4 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
     background: #adb6e4;
     color: #222;
     margin: 0;
@@ -43,7 +42,7 @@ section {
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, mimmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
 
@@ -99,8 +98,42 @@ footer {
     border-radius: 12px;
     margin: 2rem;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wghts@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 body {font-family: 'Poppins', sans-serif;}
 
 
+body.dark {
+    background: #111827;
+    color: #e5e7eb;
+}
+
+body.dark section {
+    background: #1f2937;
+    color: #e5e7eb;
+}
+
+body.dark header, body.dark footer {
+    background: #0f172a;
+}
+
+body.dark nav {
+    background: #1e293b;
+}
+
+body.dark nav a {
+    color: #e5e7eb;
+}
+
+body.dark.project-card {
+    background: #374151;
+    border-left: 5px solid #38bdf8;
+}
+
+body.dark.project-card a {
+    color: #38bdf8;
+}
+
+body.dark #back-to-top {
+    background: 338bdf8;
+}

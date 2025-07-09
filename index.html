@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="StarCoder">
+  <meta name="description" content="Portfolio of StarCoder -Python Developer and CLI Engineer building automation tools and full-stack projects.">
+  <meta name="keywords" content="StarCoder, Python, Developer, Portfolio, CLI Tools, Automation, Projects, Resume">
+  <meta name="robots" content="index, follow">
+
   <title>StarCoder | Python Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png"/>
@@ -90,26 +95,26 @@
   <section id="resume">
     <h2>📜 Resume</h2>
     <p>Download my resume:
-      <a href="javascript:window.print()">🖨️ Download as PDF (Working on it)</a>
+      <a href="javascript:window.print()">🖨️ View My Resume and download directly from browser (Working on it)</a>
     </p>
   </section>
   <footer>
     <p>Built by StarCoder 🚀 | <a href="https://github.com/StarCoderSC" target="_blank">GitHub</a></p>
-    <button is="back-to-top">⬆️</button>
+    <button id="back-to-top">⬆️</button>
   </footer>
 
   <script>
     const toggle = document.getElementById('theme-toggle');
     toggle.onclick = () => {
       document.body.classList.toggle('dark');
-      toggle.textContent = document.classList.contains('dark') ? '🌞' : '🌙';
+      toggle.textContent = document.body.classList.contains('dark') ? '🌞' : '🌙';
     };
 
     const navLinks = document.querySelectorAll('nav a');
     window.addEventListener('scroll', () => {
       navLinks.forEach(link => {
-        const sec = document.querySelector(link.getAttribute('href'));
-        if (sec.getBoundingClientRect().top <= 100 && sec.getBoundingClientRect().top >= 100) {
+        const secTop = sec.getBoundingClientRect().top;
+        if (sec.top <= 100 && sec.top >= 100) {
           link.classList.add('active');
         } else link.classList.remove('active');
       });
