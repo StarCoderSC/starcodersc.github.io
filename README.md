@@ -1,6 +1,5 @@
 # 🌐 StarCoder's Portfolio
 
-![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
 ![Licence: MIT](https://img.shields.io/badge/licence-MIT-green.svg)
 ![Made with❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red.svg)
 ![GitHub followers](https://img.shields.io/github/followers/StarCoderSC?style=social)
@@ -15,7 +14,7 @@ It showcases my current Python projects and tools as I learn and grow in the wor
 ## Table of Contents
 
 - [Featured Projects](#-featured-projects)
-- [Built With]( # -built-with)
+- [Built With](#-built-with)
 - [Who Am I](#-who-am-i)
 - [Future Goals](#-future-goals)
 
