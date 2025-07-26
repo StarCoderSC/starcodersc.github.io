@@ -1,45 +1,114 @@
 # 🌐 StarCoder's Portfolio
 
+![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
+![Licence: MIT](https://img.shields.io/badge/licence-MIT-green.svg)
+![Made with❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red.svg)
+![GitHub followers](https://img.shields.io/github/followers/StarCoderSC?style=social)
+
+
 This is my personal developer website built using just HTML and CSS.
-It showcases my current Python projects and tools as I learn and grow in the programming world.
+It showcases my current Python projects and tools as I learn and grow in the world of programming.
 
-🔗 Live site: [https://starcodersc.github.io](https://starcodersc.github.io)
+🔗 **Live site** [https://starcodersc.github.io](https://starcodersc.github.io)
 
-## 🧠 Projects Featured
 
-- [Duplicates File Cleaner](https://github.com/StarCoderSC/duplicate-file-cleaner)
-  -> A terminal-based Python CLI tool that scans folders for **duplicate files based on content**, and lets you **preview or safely delete them**.
+## Table of Contents
 
-- [Math Expression Evaluator](https://github.com/StarCoderSC/math-expression-evaluator)
-  -> A scientific calculator that supports variables, user-defined functions, and full infix evaluation without using Python's 'eval()' - all CLI-Powered
+- [Featured Projects](#-featured-projects)
+- [Built With]( # -built-with)
+- [Who Am I](#-who-am-i)
+- [Future Goals](#-future-goals)
 
-- [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todo-manager)
-  -> A lightweight command-line task manager with persistent storage
 
-- [File Organizer CLI](https://github.com/StarCoderSC/file-organizer-cli)
-  -> Organizes file by type, logs actions, supports undo via log.
+---
 
-- [Flatten utils](https://github.com/StarCoderSC/flatten-utils)
-  -> A lightweight utility to deeply flatten nested Python structure like 'lists', 'tuples', 'sets','dicts' and more -- without breaking a sweat
 
-- [Flask Contact App](https://github.com/StarCoderSC/flask-contact-app)
-  -> A fully functionalblog web application buillt with Flask and SQL Alchemy.
-  Includes admin controls, contact form.
-  API support, comment section, and Google login integration.
+## 🧠 Featured Projects 
 
-## Build with 
+### 📝 [SecondMind CLI Notepad](https://github.com/StarCoderSC/secondmind-cli)
+Secure, SQLite-powered command-line notepad with:
+- 🔐 User authentication
+- 🏷️ Tag-based filtering
+- 📅 Due-date alerts & reminders
+- 📤 JSON/TXT import & export
+- 🎨 Styled TUI output with ['Rich'](https://github.com/Textualize/rich)
+
+>My most advanced CLI app yet — a second brain for the terminal.
+
+---
+
+### 📓 [SmartNotepad CLI](https://github.com/StarCoderSC/smartnotepad-cli)
+Early version of my note-taking CLI app using JSON storage. Includes:
+- 🗂️ Tag & due-date filtering
+- 📁 Persistent JSON storage
+- ⏰ Local reminders & alerts
+- 🎯 Evolved later into SecondMind CLI
+
+> Simple, fast, no-database note-taking for CLI lovers.
+
+---
+
+### 🗃️ [Duplicate File Cleaner](https://github.com/StarCoderSC/duplicate-file-cleaner)
+Detects duplicate files based on content using SHA256 hashing.  
+Supports preview, safe deletion, and recovery via trash system.
+
+---
+
+### 🔢 [Math Expression Evaluator](https://github.com/StarCoderSC/math-expression-evaluator)
+Scientific calculator with:
+- 📐 Variable & function support
+- 🚫 No use of `eval()`
+- ✅ Full infix expression handling
+
+---
+
+### ✅ [CLI To-Do Manager](https://github.com/StarCoderSC/cli-todo-manager)
+Lightweight terminal task manager with persistent text-based storage.
+
+---
+
+### 🗂️ [File Organizer CLI](https://github.com/StarCoderSC/file-organizer-cli)
+Organizes files by type, logs every action, and supports undo via logs.
+
+---
+
+### 🧩 [Flatten Utils](https://github.com/StarCoderSC/flatten-utils)
+Tiny utility to deeply flatten nested Python structures like:
+`lists`, `tuples`, `sets`, `dicts`, and hybrids — without breaking a sweat.
+
+---
+
+### 🌐 [Flask Contact App](https://github.com/StarCoderSC/flask-contact-app)
+A blog-style contact app built with Flask + SQLAlchemy.  
+Includes:
+- 👤 Admin controls  
+- ✉️ Contact form & Google Login  
+- 🧩 REST API support  
+- 💬 Comment system
+
+---
+
+## 🛠️ Built With
 
 - HTML5
 - CSS3
-- Github Pages (Free Hosting)
+- GitHub Pages (Free Hosting)
 
-## Who Am I?
+---
 
-I'm a self-taught developer learning Python, CLI tools, automation, and web development from scratch.
-I work on a low-RAM machine and still get things done - because passion > hardware
+## 👤 Who Am I?
+
+I'm a self-taught developer learning Python, CLI tools, automation, and full-stack web development from scratch.  
+I build and test everything on a low-RAM machine — because **passion > hardware**.
+
+---
 
 ## 🚀 Future Goals
 
-- Learn full-stack backend (Flask -> APIs -> DBs)
-- Build a blog platorm (Flask + SQLite)
-- Dive deep into AI & autmation
+- Dive deep into backend: Flask → APIs → SQL/NoSQL DBs  
+- Build a full blog platform with Flask + SQLite  
+- Master automation, TUI apps, and eventually… AI 🤖
+
+---
+
+> Thanks for checking out my work. Feel free to explore the projects, drop a star ⭐, or give feedback!
