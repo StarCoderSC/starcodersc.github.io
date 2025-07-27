@@ -1,0 +1,35 @@
+.hero-text {
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.hero-title {
+    animation: fadelnUp 1.2s ease-in-out forwards;
+    text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
+}
+
+@keyframes fadelnUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #00f0ff;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: scale(1.05);
+}
