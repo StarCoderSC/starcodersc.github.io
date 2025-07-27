@@ -5,11 +5,11 @@
 }
 
 .hero-title {
-    animation: fadelnUp 1.2s ease-in-out forwards;
+    animation: fadeInUp 1.2s ease-in-out forwards;
     text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff;
 }
 
-@keyframes fadelnUp {
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
