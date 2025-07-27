@@ -132,3 +132,35 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+.badges {
+    margin-top: 0.5em;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #00f0ff22;
+    color: #00f0ff;
+    font-size: 0.75em;
+    padding: 0.2em 0.6em;
+    border-radius: 6px;
+    margin: 0.2em;
+    border: 1px solid #00f0ff55;
+}
+
+.skils-grid {
+    display: fles;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 1em;
+    justify-content: center;
+}
+
+.skill {
+    background-color: #111;
+    color: #00f0ff;
+    border: 1px solid #00f0ff55;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    font-weight: bold;
+}

@@ -12,6 +12,11 @@
   <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png"/>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script defer src="script js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 <body>
   <div id="particles-js"></div>
@@ -34,19 +39,18 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <img src="images/avatar.png" alt="StarCoder Avatar" class="avatar">
         <h1 class="hero-title">Hi, I'm <span class="glow">StarCoder</span></h1>
         <div class="hero-avatar">
           <img src="avatar.png" alt="StarCoder Avatar">
         </div>
         <p class="hero-subtitle">Tutning ideas into terminal-based magic.</p>
-        <a href="#project" class="cta-btn">View My Projects ⬇️</a>
+        <a href="#projects" class="cta-btn">View My Projects ⬇️</a>
       </div>
     </section>
 
     <section id="projects">
       <h2>🧰 Featured Projects</h2>
-    <div class="project-grid">
+    <div class="project-section">
       <div class="project-card">
         <h3>📝 SecondMind CLI Notepad</h3>
         <p>Terminal-based secure note-taking app with user authentication, tag filtering,
@@ -57,35 +61,60 @@
       </div>
 
       <div class="project-card">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">SQLite</span>
+          <span class="badge">CLI</span>
+        </div>
         <h3>🧹 Duplicate File Cleaner</h3>
         <p>Detects duplicate files via SHA256 hashing. Safe deletion with preview and trash-recovery built-in</p>
         <a href="https://github.com/StarCoderSC/duplicate-file-cleaner" target="_blank">🔗 GitHub</a>
       </div>
 
       <div class="project-card">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">CLI</span>
+        </div>
         <h3>🧠 Math Expression Evaluator</h3>
         <p>Scientific calculator with variable + function support + 'answer' reuse, built without 'eval()'.</p>
         <a href="https://github.com/StarCoderSC/math-expression-evaluator" target="_blank">🔗 GitHub</a>
       </div>
 
       <div class="project-card">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">CLI</span>
+        </div>
         <h3>📋 CLI To-Do Manager</h3>
         <p>Task manager that works entirely in terminal. Add, delete, mark complete with file persistence.</p>
         <a href="https://github.com/StarCoderSC/cli-todo-manager" target="_blank">🔗 GitHub</a>
       </div>
 
       <div class="project-card">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">CLI</span>
+        </div>
         <h3>🧹 File Organizer CLI</h3>
         <p>Auto-sorts files into folders by type. Includes preview, logging, and undo. Built for real users.</p>
         <a href="https://github.com/StarCoderSC/file-organizer-cli" target="_blank">🔗 GitHub</a>
       </div>
 
       <div class="project-card">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">CLI</span>
+        </div>
         <h3>📦 Flatten Utils</h3>
         <p>A lightweight utility to deeply flatten nested Python structure like <code>list</code>, <code>tuple</code>, <code>set</code>, and <code>dict</code> -- without breaking a sweat.</p>
         <a href="https://github.com/StarCoderSC/flatten-utils" target="_blank">🔗 GitHub</a>
       </div>
       <div class="project-card">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">CLI</span>
+        </div>
         <h3>📓 SmartNotepad CLI</h3>
         <p>Lightweight CLI notepad build on JSON, later evolve into SQLite-based
           SecondMind CLI
@@ -93,6 +122,11 @@
         <a href="https://github.com/StarCoderSC/smartnotepad-cli" target="_blank">🔗 GitHub</a>
       </div>
       <div class="project-card">
+        <div class="badges">
+          <span class="badge">Python</span>
+          <span class="badge">Flask</span>
+          <span class="badge">CLI</span>
+        </div>
         <h3>🌐 Flask Contact App</h3>
         <p>A fully functional blog web application built with Flask and SQLAlchemy. Includes admin controls, contact form,
           API support, comment section, and -> Google login Integration on the process(will resume soon).
@@ -110,7 +144,18 @@
   </section>
 
   <section id="skills">
-
+    <h2> Tech Stack & Tools</h2>
+    <div class="class grid"></div>
+      <span class="skill">🐍 Python</span>
+      <span class="skill">🧰 CLI Tools</span>
+      <span class="skill">🗄️ SQLite</span>
+      <span class="skill">🌐 Flask</span>
+      <span class="skill">🎨 Rich</span>
+      <span class="skill">📁 JSON</span>
+      <span class="skill">🛠️ Git & GitHub</span>
+      <span class="skill">💻 Bash</span>
+      <span class="skill">🧠 AI/ML(beginner)</span>
+  </div>
   </section>
 
   <section id="resume">
