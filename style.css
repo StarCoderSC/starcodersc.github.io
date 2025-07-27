@@ -33,3 +33,61 @@
 .cta-button:hover {
     transform: scale(1.05);
 }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #00f0ff;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2em;
+    color: #00f0ff;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/*=== Responsive Styles ===*/
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #111;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
