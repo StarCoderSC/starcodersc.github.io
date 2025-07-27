@@ -91,3 +91,15 @@
     }
 }
 
+.hero-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1em;
+    box-shadow: 0 0 20px #00f0ff;
+    transition: transform 0.3s ease;
+}
+
+.hero-avatar img:hover {
+    transform: scale(1.05);
+}
