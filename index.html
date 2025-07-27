@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -7,48 +7,41 @@
   <meta name="description" content="Portfolio of StarCoder -Python Developer and CLI Engineer building automation tools and full-stack projects.">
   <meta name="keywords" content="StarCoder, Python, Developer, Portfolio, CLI Tools, Automation, Projects, Resume">
   <meta name="robots" content="index, follow">
-
-  <title>StarCoder | Python Developer</title>
+  <title>StarCoder | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png"/>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
+  <script defer src="script js"></script>
 </head>
 <body>
   <div id="particles-js"></div>
-
+  
   <header>
-    <div class="nav-container">
-      <h1> StarCoder </h1>
-      <p>Python Dev | CLI Tools | Future AI Scientist</p>
-      <nav id="navbar">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-        <a href="https://github.com/StarCoderSc" target="_blank">GitHub</a>
-        <button id="theme-toggle">🌙</button>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <div class="logo">StarCoder</div>
+      <button class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="hero">
-    <h2>👋 Hi, I'm Starcoder.</h2>
-    <p><span id="typewriter-text"></span><span class="cursor">|</span></p>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="avatar.png" alt="StarCoder Avatar" class="avatar">
+        <h1 class="fade-in">Hi, I'm <span class="glow">StarCoder</span></h1>
+        <p class="tagline">Just a guy, a terminal, and too much coffee.</p>
+        <a href="#project" class="cta-button">⬇️ View My Projects</a>
+      </div>
+    </section>
 
-  <section id="about">
-    <h2>🧠 About Me</h2>
-    <p>
-      I'm StarCoder - a self-taught Python developer who's been building powerful command-line tools, automation scripts and clean web apps.<br><br>
-      My Mission is simple: write code that solves real problems and makes life easier (and more fun).<br><br>
-      I specialize in backend logic, CLI utilities, and clean architecture. My current focus is improving my full-stack development skills while mastering Python from the inside out.
-      Every project I build is a step toward my long-term goal: working in AI, automation, and tech that pushes humanity forward.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>🧰 Featured Projects</h2>
+    <section id="projects">
+      <h2>🧰 Featured Projects</h2>
     <div class="project-grid">
       <div class="project-card">
         <h3>📝 SecondMind CLI Notepad</h3>
@@ -118,8 +111,10 @@
       <a href="#" onclick="window.print(); return false;">🖨️ View My Resume and download directly from browser</a>
     </p>
   </section>
+  </main>
+
   <footer>
-    <p>Built by StarCoder 🚀 | <a href="https://github.com/StarCoderSC" target="_blank">GitHub</a></p>
+    <p>© 2025 StarCoder. All rights reserved. | <a href="https://github.com/StarCoderSC" target="_blank">GitHub</a></p>
     <button id="back-to-top">⬆️</button>
   </footer>
 
@@ -247,3 +242,4 @@
 
 </body>
 </html>
+
