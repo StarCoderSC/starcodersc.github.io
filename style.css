@@ -103,3 +103,32 @@
 .hero-avatar img:hover {
     transform: scale(1.05);
 }
+
+.projects-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5em;
+    padding: 2em;
+}
+
+.project-card {
+    background-color: #0f111a;
+    border: 1px solid #00f0ff;
+    border-radius: 12px;
+    padding: 1.5em;
+    box-shadow: 0 0 10px #00f0ff55;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px #00f0ffcc;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1em;
+    color: #00f0ff;
+    text-decoration: none;
+    font-weight: bold;
+}
