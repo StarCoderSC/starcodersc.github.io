@@ -73,17 +73,6 @@ a:hover {
     color: #cccccc;
 }
 
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 .cta-button {
     margin-top: 1.5rem;
     display: inline-block;
@@ -230,8 +219,8 @@ a:hover {
     font-weight: bold;
 }
 
-.skils-grid {
-    display: fles;
+.skills-grid {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.8rem;
