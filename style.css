@@ -165,28 +165,6 @@ a:hover {
     }
 }
 
-/*=== Responsive Styles ===*/
-@media screen and (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #111;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 1em 0;
-    }
-
-    #menu-toggle:checked ~ .nav-links {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
 
 .hero-avatar img {
     width: 150px;
