@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png"/>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script defer src="script js"></script>
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div id="particles-js"></div>
@@ -19,7 +19,7 @@
   <header>
     <nav class="navbar">
       <div class="logo">⭐ StarCoder</div>
-      <div class="hamburger" onclick="toggleMenu">☰</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">Home</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -145,7 +145,7 @@
 
   <section id="skills">
     <h2> Tech Stack & Tools</h2>
-    <div class="class grid"></div>
+    <div class="skills-grid"></div>
       <span class="skill">🐍 Python</span>
       <span class="skill">🧰 CLI Tools</span>
       <span class="skill">🗄️ SQLite</span>
@@ -172,8 +172,8 @@
 
   <script>
     function toggleMenu() {
-      const navLinks = document.getELementById("navLinks");
-      navLinks.classList.toggle('active');
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle('nav-links-active');
     }
   </script>
 
