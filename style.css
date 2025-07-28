@@ -25,16 +25,18 @@ a:hover {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #00ffe1;
+    color: #00f0ff;
+    text-shadow: 0 0 10px #00f0ff;
 }
 
+/* === NAVBARS STYLES === */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #1a1d26;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    padding: 1em 2em;
+    background-color: #0a0a0a;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -102,6 +104,7 @@ a:hover {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .nav-links a {
@@ -110,24 +113,56 @@ a:hover {
 }
 
 .nav-links a:hover {
-    color: #ffffff;
+    color: #00f0ff;
 }
 
 .nav-links li a {
     text-decoration: none;
-    color: #00f0ff;
+    color: white;
     font-weight: bold;
 }
 
+/* === HMABURGER ICON === */
 .hamburger {
     display: none;
     font-size: 2em;
-    color: #00f0ff;
+    color: white;
     cursor: pointer;
 }
 
 #menu-toggle {
     display: none;
+}
+
+/* === MOBILE RESPONSVE == */
+#media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #111;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease-out, opacity 0.4s ease-out;
+    }
+
+    .nav-links-active {
+        max-height: 300px;
+        opacity: 1;
+        padding-bottom: 1em;
+    }
+
+    .nav-links li {
+        margin: 1em 0;
+    }
 }
 
 /*=== Responsive Styles ===*/
