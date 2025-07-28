@@ -117,11 +117,6 @@ img {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-
-#menu-toggle {
-  display: none;
-}
-
 /* === HERO SECTION === */
 .hero {
   display: flex;
