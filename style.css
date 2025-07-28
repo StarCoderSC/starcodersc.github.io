@@ -254,6 +254,13 @@ a:hover {
     color: #000;
 }
 
+/* Contact */
+#contact {
+    text-align: center;
+    padding: 2rem 1rem 4rem;
+    background: #11131a;
+}
+
 #contact p {
     margin-bottom: 0.6rem;
 }
