@@ -19,13 +19,20 @@
   <header>
     <nav class="navbar">
       <div class="logo">⭐ StarCoder</div>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">Home</a></li>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</li>
         <li><a href="#contact">Contact</a></li>   
       </ul>
+
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </nav>
   </header>
 
@@ -170,13 +177,8 @@
     <p>© 2025 StarCoder. All rights reserved. | <a href="https://github.com/StarCoderSC" target="_blank">GitHub</a></p>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      const navLinks = document.getElementById("navLinks");
-      navLinks.classList.toggle('nav-links-active');
-    }
-  </script>
-
+  <script src="script.js"></script>
+  
 </body>
 </html>
 
