@@ -27,13 +27,6 @@ img {
   display: block;
 }
 
-/* === LOGO === */
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00f0ff;
-  text-shadow: 0 0 10px #00f0ff;
-}
 
 /* === NAVBAR === */
 .navbar {
@@ -42,23 +35,31 @@ img {
   align-items: center;
   padding: 1em 2em;
   background-color: #0a0a0a;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
+/* === LOGO === */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #00f0ff;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2em;
   transition: all 0.3s ease;
 }
 
 .nav-links li a {
   color: white;
+  text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
 }
 
 .nav-links li a:hover {
