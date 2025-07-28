@@ -72,6 +72,22 @@ img {
   padding-bottom: 1em;
 }
 
+.navbar.scrolled {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  background-color: rgba(20, 20, 20, 0.95);
+  transition: all 0.3s ease-in-out;
+}
+
+/* === NAV SCROLL SHADOW === */
+.navbar.shadow {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+}
+
+.navbar.shadow,
+.navbar-scrolled {
+  transition: all 0.3s ease-in-out;
+}
+
 /* === HAMBURGER Animation === */
 .hamburger {
   display: none;
@@ -101,20 +117,6 @@ img {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-.navbar.scrolled {
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  background-color: rgba(20, 20, 20, 0.95); /* optional: darkens on scroll */
-}
-
-/* === NAV SCROLL SHADOW === */
-.navbar.shadow {
-    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
-}
-
-.navbar.shadow,
-.navbar-scrolled {
-  transition: all 0.3s ease-in-out;
-}
 
 #menu-toggle {
   display: none;
