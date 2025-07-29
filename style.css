@@ -72,12 +72,6 @@ img {
   padding-bottom: 1em;
 }
 
-.nav-links.nav-links-active {
-  max-height: 300px;
-  opacity: 1;
-  padding-bottom: 1em;
-}
-
 .navbar.scrolled {
   box-shadow: 0 2px 10px rgba(0,0,0,0.7);
   background-color: rgba(20, 20, 20, 0.95);
@@ -124,7 +118,7 @@ img {
 }
 
 /* === HERO SECTION === */
-.hero {
+.hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,8 +178,12 @@ img {
   transform: scale(1.05);
 }
 
+.hero-avatar {
+  animation: fadeInup 1s ease-in-out forwards;
+}
+
 /* === PROJECT SECTION === */
-.projects-grid {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -216,6 +214,8 @@ img {
   margin-bottom: 0.8rem;
 }
 
+/* BADGES */
+
 .badges {
   margin-top: 0.8rem;
   display: flex;
@@ -230,6 +230,12 @@ img {
   border-radius: 12px;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.badge.hover {
+  background: #00d9c0;
+  color: #000;
+  cursor: default;
 }
 
 /* === SKILLS SECTION === */
@@ -300,7 +306,7 @@ img {
   text-decoration: none;
   font-weight: bold;
   box-shadow: 0 0 10px #00f0ff66;
-  transition: transform 0.2ease, background-color 0.3s ease;
+  transition: transform 0.2 ease, background-color 0.3s ease;
 }
 
 .contact-btn:hover {
@@ -349,6 +355,11 @@ footer {
   border-top: 1px solid #1e212b;
 }
 
+footer a:hover {
+  color: #00f0ff;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -376,7 +387,7 @@ footer {
     z-index: 1001;
   }
 
-  .hamburger span {
+  .hamburger .bar {
     background: #fff;
     height: 3px;
     width: 25px;
@@ -413,22 +424,24 @@ footer {
 
 /* SECTION */
 .about-section {
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   opacity: 0;
   background-color: #1a1d26;
   text-align: center;
   transform: translateY(40px);
-  transition: opacity 1s ease, transdorm 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .about-section h2 {
   font-size: 2rem;
+  padding: 4rem 2rem;
   margin-bottom: 1rem;
   color: #00ffe1;
 }
 
 .about-section p {
   max-width: 900px;
+  padding: 4rem 2rem;
   margin: 0.5rem auto;
   color: #cccccc;
   font-size: 1.1rem;
@@ -437,5 +450,6 @@ footer {
 
 .about-section.visible {
   opacity: 1;
+  padding: 4rem 2rem;
   transform: translateY(0);
 }
