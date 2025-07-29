@@ -258,10 +258,11 @@ img {
 }
 
 /* === CONTACT SECTION === */
-#contact {
+.contact {
   text-align: center;
   padding: 4em 2em;
-  background-color: #0b0b0b;
+  background-color: #0b0e1a;
+  color: #fff;
   border-top: 2px solid #00f0ff;
 }
 
@@ -288,14 +289,18 @@ img {
 
 .contact-btn {
   display: inline-block;
-  padding: 0.75em 1.5em;
+  padding: 0.75em 1.25em;
+  border-radius: 30px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
   background-color: #00f0ff;
-  color: #c8dfe4;
-  font-weight: bold;
-  border-radius: 10px;
+  color: #000;
   text-decoration: none;
-  box-shadow: 0 0 10px #00f0ff;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 0 10px #00f0ff66;
+  transition: transform 0.2ease, background-color 0.3s ease;
 }
 
 .contact-btn:hover {
@@ -303,13 +308,30 @@ img {
   box-shadow: 0 0 15px #00f0ff, 0 0 25px #00f0ff;
 }
 
-#contact p {
-  margin-bottom: 0.6rem;
+.contact p {
+  max-width: 600px;
+  margin: 0 auto 2em;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 .contact-btn i {
-  margin-right: 8px;
+  font-size: 1.1em;
 }
+
+.contact h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
 
 /* === RESUME SECTION === */
 #resume {
