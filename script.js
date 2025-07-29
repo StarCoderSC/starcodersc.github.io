@@ -30,7 +30,7 @@ window.addEventListener("scroll", () => {
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.get.classList.add('visible');
+        entry.target.classList.add('visible');
       }
     });
 });
