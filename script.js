@@ -26,3 +26,17 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.get.classList.add('visible');
+      }
+    });
+});
+
+
+document.querySelectorAll('about-section').forEach(section => {
+  observer.observe(section);
+});
+  
