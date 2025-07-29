@@ -331,8 +331,11 @@ footer {
 /* SECTION */
 .about-section {
   padding: 3rem 2rem;
+  opacity: 0;
   background-color: #1a1d26;
   text-align: center;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transdorm 1s ease;
 }
 
 .about-section h2 {
@@ -349,3 +352,7 @@ footer {
   line-height: 1.6;
 }
 
+.about-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
