@@ -260,12 +260,55 @@ img {
 /* === CONTACT SECTION === */
 #contact {
   text-align: center;
-  padding: 2rem 1rem 4rem;
-  background: #11131a;
+  padding: 4em 2em;
+  background-color: #0b0b0b;
+  border-top: 2px solid #00f0ff;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+.section-subtitle {
+  font-size: 1.1em;
+  margin-bottom: 2em;
+  color: #ccc;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #00f0ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00f0ff;
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00f0ff, 0 0 25px #00f0ff;
 }
 
 #contact p {
   margin-bottom: 0.6rem;
+}
+
+.contact-btn i {
+  margin-right: 8px;
 }
 
 /* === RESUME SECTION === */
