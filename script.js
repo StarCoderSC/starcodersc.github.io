@@ -29,14 +29,12 @@ window.addEventListener("scroll", () => {
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
 });
-
 
 document.querySelectorAll('section').forEach(section => {
   observer.observe(section);
 });
-  
