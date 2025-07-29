@@ -326,3 +326,26 @@ footer {
     transform: translateY(0);
   }
 }
+
+
+/* SECTION */
+.about-section {
+  padding: 3rem 2rem;
+  background-color: #1a1d26;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00ffe1;
+}
+
+.about-section p {
+  max-width: 900px;
+  margin: 0.5rem auto;
+  color: #cccccc;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
