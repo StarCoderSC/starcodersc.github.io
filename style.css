@@ -276,35 +276,40 @@ footer {
 
 /* CONTACT */
 
-.contact-section {
+.contact {
   text-align: center;
-  padding: 4rem 2rem;
-  background: #0f0f0f;
-  color: #f0f0f0;
+  padding: 60px 20px;
+  background: #0d0d0d;
+  color: #fff;
 }
 
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
   color: #00ffee;
   text-shadow: 0 0 10px #00ffee88;
 }
 
+.contact p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
 .contact-icons {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 30px;
 }
 
-.contact-icons a {
-  color: #00ffee;
-  font-size: 2rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+.contact-icons i {
+  font-size: 2,2rem;
+  color: #ccc;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.contact-icons a:hover {
+.contact-icon:hover {
   transform: scale(1.2);
-  color: #ffffff;
-  text-shadow: 0 0 10px #00ffee;
+  color: #0ff;
+  text-shadow: 0 0 8x #0ff;
 }
