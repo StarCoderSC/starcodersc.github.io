@@ -318,7 +318,7 @@ footer {
 }
 
 /* Animation when hamburger is active */
-.hamburger.active .bara:nth-child(1) {
+.hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 
