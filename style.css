@@ -303,12 +303,12 @@ footer {
 }
 
 .contact-icons i {
-  font-size: 2,2rem;
+  font-size: 2.2rem;
   color: #ccc;
   transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
-.contact-icon:hover {
+.contact-icon:hover i{
   transform: scale(1.2);
   color: #0ff;
   text-shadow: 0 0 8px #0ff;
