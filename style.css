@@ -311,5 +311,6 @@ footer {
 .contact-icon:hover {
   transform: scale(1.2);
   color: #0ff;
-  text-shadow: 0 0 8x #0ff;
+  text-shadow: 0 0 8px #0ff;
 }
+
