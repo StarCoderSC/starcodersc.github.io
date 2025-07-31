@@ -334,7 +334,7 @@ footer {
 }
 
 .project-grid {
-  opacity: 0;
+  opacity: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2rem;
@@ -348,10 +348,11 @@ footer {
 
 .project-card {
   background: #111;
+  transform: translateY(30px);
   padding: 1.5rem;
   border: 1px solid #00ffff33;
   border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transition 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {

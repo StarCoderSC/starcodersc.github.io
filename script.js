@@ -34,7 +34,7 @@ const observer = new IntersectionObserver(entries => {
     }
   });
   entries.forEach((entry, index) => {
-    if (entry.isINtersecting) {
+    if (entry.isIntersecting) {
       setTimeout(() => {
         entry.target.classList.add('visible');
       }, index * 200); //200ms delay between cards
@@ -43,7 +43,9 @@ const observer = new IntersectionObserver(entries => {
 }, {
   threshold: 0.1,
 });
-
+document.querySelectorAll(".project-card").forEach(card => {
+  observer.observe(card);
+});
 document.querySelectorAll('section').forEach(section => {
   observer.observe(section);
 });
