@@ -27,7 +27,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const observer = new IntersectionObserver((entries) => {
+const cardObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
       setTimeout(() => {
@@ -41,4 +41,3 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".project-card").forEach(card => {
   cardObserver.observe(card);
 });
-
