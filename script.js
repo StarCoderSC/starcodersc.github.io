@@ -9,7 +9,7 @@ hamburger.addEventListener("click", () => {
 });
 
 // Auto-close nav on link click (mobile)
-document.querySelectorAll(".nav-links a").forEach(link =>
+document.querySelectorAll("#navLinks a").forEach(link =>
   link.addEventListener("click", () => {
     if (navLinks.classList.contains("nav-links-active")) {
       navLinks.classList.remove("nav-links-active");
@@ -33,6 +33,15 @@ const observer = new IntersectionObserver(entries => {
       entry.target.classList.add('visible');
     }
   });
+  entries.forEach((entry, index) => {
+    if (entry.isINtersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 200); //200ms delay between cards
+    }
+  });
+}, {
+  threshold: 0.1,
 });
 
 document.querySelectorAll('section').forEach(section => {
