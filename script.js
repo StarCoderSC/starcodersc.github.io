@@ -5,14 +5,14 @@ const navbar = document.querySelector(".navbar");
 // Toggle nav menu
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
-  navLinks.classList.toggle("naLinks-active");
+  navLinks.classList.toggle("nav-links-active");
 });
 
 // Auto-close nav on link click (mobile)
-document.querySelectorAll("navLinks-active a").forEach(link =>
+document.querySelectorAll(".nav-links a").forEach(link =>
   link.addEventListener("click", () => {
-    if (navLinks.classList.contains("navLinks-active")) {
-      navLinks.classList.remove("navLinks-active");
+    if (navLinks.classList.contains("nav-links-active")) {
+      navLinks.classList.remove("nav-links-active");
       hamburger.classList.remove("active");
     }
   })
