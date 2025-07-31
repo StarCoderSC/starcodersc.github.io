@@ -34,10 +34,23 @@ const cardObserver = new IntersectionObserver((entries) => {
         entry.target.classList.add('visible');
       }, index * 200); //200ms delay between cards
 
-      cardObserve.unobserve(entry.target); // Stop observing once revealed
+      cardObserver.unobserve(entry.target); // Stop observing once revealed
     }
   });
 }, { threshold: 0.1 });
 document.querySelectorAll(".project-card").forEach(card => {
   cardObserver.observe(card);
 });
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  })
+});
+document.querySelectorAll('section').forEach(section => {
+  observer.observe(section);
+});
+
