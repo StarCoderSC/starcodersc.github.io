@@ -354,13 +354,13 @@ footer {
   transform: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.project-card.visible {
+.project-card.card-visible {
   opacity: 1;
   transform: translateY(0);
   animation: slideUp 0.6s ease-out forwards;
 }
 
-.project-card {
+.project-card.card {
   background: #111;
   transform: translateY(40px);
   padding: 1.5rem;
@@ -369,7 +369,7 @@ footer {
   transition: transition 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
+.project-card.card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px #00ffff88, 0 0 10px #00f7ff33 inset;
 }
