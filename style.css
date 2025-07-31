@@ -315,6 +315,17 @@ footer {
   display: flex;
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* PROJECT */
 .project-btn {
   display: inline-block;

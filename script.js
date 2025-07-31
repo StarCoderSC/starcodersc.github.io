@@ -27,25 +27,18 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
       setTimeout(() => {
         entry.target.classList.add('visible');
       }, index * 200); //200ms delay between cards
+
+      cardObserve.unobserve(entry.target); // Stop observing once revealed
     }
   });
-}, {
-  threshold: 0.1,
-});
+}, { threshold: 0.1 });
 document.querySelectorAll(".project-card").forEach(card => {
-  observer.observe(card);
+  cardObserver.observe(card);
 });
-document.querySelectorAll('section').forEach(section => {
-  observer.observe(section);
-});
+
